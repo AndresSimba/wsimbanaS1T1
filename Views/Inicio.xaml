@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wsimbanaT1.Views.Inicio"
+             Title="Inicio">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="20"
+        Margin="20">
+            <Label 
+        Text="FASE A - GRADO"
+        HorizontalTextAlignment="Center"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+
+            <Label 
+        Text="Formulario de registro Complete la siguiente información para realizar su inscripción"
+        HorizontalTextAlignment="Center"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+
+            <Label 
+        Text="Datos personales"
+        HorizontalTextAlignment="Center"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+
+            <Label 
+        Text="Identificación:"
+        HorizontalTextAlignment="Center"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+
+            <Entry x:Name="txtTipoDocumento"
+           Placeholder="CEDULA - PASAPORTE"
+           TextChanged="Entry_TextChanged"
+            />
+            
+            <Entry x:Name="txtNumeroCedula"
+        Placeholder="123456789"
+                   TextChanged="txtNumeroCedula_TextChanged"
+        />
+
+            <Label 
+        Text="Apellidos:"
+        HorizontalTextAlignment="Start"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="txtApellidoPaterno"
+         Placeholder="Paterno"
+                TextChanged="txtApellidoPaterno_TextChanged"
+        />
+
+            <Entry
+                 x:Name="txtApellidoMaterno"
+        Placeholder="Materno"
+                TextChanged="txtApellidoMaterno_TextChanged"
+        />
+            <Label 
+       Text="Nombres completos:"
+       HorizontalTextAlignment="Center"
+       VerticalOptions="Center" 
+       HorizontalOptions="Center" />
+
+            <Entry
+                 x:Name="txtNombres"
+        Placeholder="Juan Mateo"
+                TextChanged="txtNombres_TextChanged"
+       />
+
+            <Label 
+     Text="Teléfono personal:"
+     HorizontalTextAlignment="Center"
+     VerticalOptions="Center" 
+     HorizontalOptions="Center" />
+
+            <Entry
+          x:Name="txtNumeroContacto"
+          Placeholder="0987654321"
+          TextChanged="txtNumeroContacto_TextChanged"
+         />
+
+            <Label 
+        Text="Correo personal:"
+        HorizontalTextAlignment="Center"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="txtCorreo1"
+         Placeholder="correo@gmail.com"
+                TextChanged="txtCorreo1_TextChanged"
+        />
+
+            <Label 
+       Text="Confirmar correo:"
+       HorizontalTextAlignment="Center"
+       VerticalOptions="Center" 
+       HorizontalOptions="Center" />
+ 
+            
+            <Entry
+                x:Name="txtCorreo2"
+        Placeholder="correo@gmail.com"
+        TextChanged="txtCorreo1_TextChanged"
+
+       />
+            <Label x:Name="ErrorLabel" 
+       TextColor="Red" 
+       IsVisible="False" />
+
+            <Label 
+        Text="Carrera:"
+        HorizontalTextAlignment="Center"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+
+            <Entry
+         Placeholder="Sistemas de la Informacion"
+        />
+
+            <Label 
+Text="Modalidad:"
+HorizontalTextAlignment="Center"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="txtModalidad"
+ Placeholder="Presencial"
+                TextChanged="txtModalidad_TextChanged"
+/>
+
+            <Label 
+Text="Campus:"
+HorizontalTextAlignment="Center"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="txtCampus"
+ Placeholder="Matriz"
+                TextChanged="txtCampus_TextChanged"
+/>
+            <Button
+                x:Name="btnEnviar"
+                Text="Enviar Inscripción"
+                Clicked="btnEnviar_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,11 @@
+Tipo de Documento: cedula
+Número de Cédula: 1724975485
+Apellido Paterno: Simbana
+Apellido Materno: Tamba
+Nombres: William Andres
+Número de Contacto: 0987654321
+Correo: correo@gmail.com
+Modalidad: P
+Campus: M
+Fecha de Registro: 12/10/2025 21:49:15
+
